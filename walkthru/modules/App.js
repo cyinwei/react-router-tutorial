@@ -6,8 +6,8 @@ export default React.createClass({
     return (
       <div>Hello, React Router!
         <ul role="nav">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/repos">Repos</Link></li>
+          <li><Link to="/about" activeStyle={{color: 'red'}}>About</Link></li>
+          <li><Link to="/repos" activeStyle={{color: 'blue'}}>Repos</Link></li>
         </ul>
         {/* render the child components in App, which comes from Render */}
         {this.props.children}
