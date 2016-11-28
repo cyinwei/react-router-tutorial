@@ -9,6 +9,8 @@ export default React.createClass({
           <li><Link to="/about">About</Link></li>
           <li><Link to="/repos">Repos</Link></li>
         </ul>
+        {/* render the child components in App, which comes from Render */}
+        {this.props.children}
       </div>
     )
   }
